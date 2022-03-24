@@ -139,7 +139,13 @@ void sqs(int x)
 	for(i=1;i<=x;i++)
 	{
 		sum = i * i;
-		printf(", %d",sum);
+		if(i == 1)
+		{
+			printf(" %d",sum);
+			continue;
+		}
+		printf(",");
+		printf(" %d",sum);
 	}
 	getch();
 }
